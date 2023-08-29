@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário</title>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <section class="form-image">
+        <img src="/assets/images/undraw_team_up_re_84ok.svg" alt="form" />
+      </section>
+      <section class="form">
+        <form action="#">
+          <div class="form-header">
+            <div class="header-title">
+              <h1>Cadastro</h1>
+            </div>
+            <div class="header-button">
+              <button><a href="#">Entrar</a></button>
+            </div>
+          </div>
+          <div class="form-inputs">
+            <div class="form-input-box" id="form-full-name">
+              <label for="full-name">Nome completo</label>
+              <input
+                type="text"
+                name="full-name"
+                id="full-name"
+                placeholder="Digite seu nome aqui"
+                required
+              />
+            </div>
+
+            <div class="form-input-box">
+              <label for="email">e-mail</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="exemplo@gmail.com"
+                required
+              />
+            </div>
+
+            <div class="form-input-box">
+              <label for="number">Número para contato</label>
+              <input
+                type="tel"
+                name="number"
+                id="number"
+                placeholder="(00) 0 0000-0000"
+              />
+            </div>
+
+            <div class="form-input-box">
+              <label for="password">Senha</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Digite sua senha"
+              />
+            </div>
+
+            <div class="form-input-box">
+              <label for="conf-password">Senha</label>
+              <input
+                type="password"
+                name="conf-password"
+                id="conf-password"
+                placeholder="Digite sua senha"
+              />
+            </div>
+          </div>
+
+          <div class="gender">
+            <div class="gender-title">
+              <h4>Sexo</h4>
+            </div>
+            <div class="gender-inputs">
+              <div class="gender-input">
+                <input type="radio" name="gender" id="masculine" />
+                <label for="masculine">Masculino</label>
+              </div>
+
+              <div class="gender-input">
+                <input type="radio" name="gender" id="female" />
+                <label for="female">Feminino</label>
+              </div>
+
+              <div class="gender-input">
+                <input type="radio" name="gender" id="none" />
+                <label for="none">outros</label>
+              </div>
+            </div>
+
+            <div class="form-button">
+              <button><a href="#">Próximo</a></button>
+            </div>
+          </div>
+        </form>
+      </section>
+    </div>
+  </body>
+</html>

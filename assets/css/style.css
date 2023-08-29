@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Robot", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+    180deg,
+    #8bbce2 0,
+    #6babdb 25%,
+    #4299d4 50%,
+    #0088cd 75%,
+    #0077c6 100%
+  );
+}
+
+.container {
+  border-radius: 2rem;
+  width: 70%;
+  height: 70vh;
+  display: flex;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
+}
+
+.form-image {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 2rem 0 0 2rem;
+  background-color: #ffffff;
+}
+
+.form-image img {
+  width: 25rem;
+}
+
+.form {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem;
+  border-radius: 0 2rem 2rem 0;
+}
+
+.form-header {
+  margin-bottom: 3rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-header h1 {
+  font-size: 2.5rem;
+}
+
+.header-button {
+  display: flex;
+  align-items: center;
+}
+
+.header-button a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #fff;
+}
+
+.header-button button {
+  height: 100%;
+  border: none;
+  background-color: #6c63ff;
+  padding: 0.4rem;
+  border-radius: 0.4rem;
+  width: 8rem;
+  cursor: pointer;
+}
+
+.header-button button:hover {
+  background-color: #7169ff;
+}
+
+.form-inputs {
+  border-top: 1px solid rgba(14, 14, 14, 0.219);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.form-input-box {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.9rem;
+}
+
+#form-full-name {
+  width: 100%;
+}
+
+.form-input-box input {
+  margin: 0.5rem 0;
+  padding: 0.7rem 1rem;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  box-shadow: 1px 1px 6px #000000a6;
+}
+
+.form-input-box input:hover {
+  background-color: #e9e9e9;
+}
+
+.form-input-box label,
+.gender-title h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #383838bb;
+}
+
+.gender {
+  padding: 1rem;
+}
+
+.gender-inputs {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.65rem;
+  padding: 0 0 0.5rem;
+}
+
+.gender-input {
+  display: flex;
+  align-items: center;
+}
+
+.gender-input input {
+  margin-right: 0.4rem;
+}
+
+.gender-input label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #000000bb;
+}
+
+.form-button button {
+  width: 100%;
+  height: 2.8rem;
+  margin-top: 10px;
+  border: none;
+  background-color: #6c63ff;
+  padding: 0.4rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+
+.form-button a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+.form-button button:hover {
+  background-color: #7169ff;
+}
+
+@media (max-width: 1515px) {
+  .form-image {
+    display: none;
+  }
+
+  .container {
+    width: 50%;
+  }
+
+  .form {
+    width: 100%;
+    border-radius: 2rem;
+    background-color: #ffffff;
+  }
+}
+
+@media (max-width: 1061px) {
+  .container {
+    width: 80%;
+    height: auto;
+  }
+
+  .form {
+    border-radius: 2rem;
+    background-color: #ffffff;
+  }
+  .form-header h1 {
+    font-size: 2rem;
+  }
+
+  .header-button {
+    width: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header-button button {
+    height: auto;
+  }
+
+  .form-inputs {
+    flex-direction: column;
+    overflow-y: scroll;
+    flex-wrap: nowrap;
+    max-height: 20rem;
+    padding: 3rem;
+  }
+
+  .gender {
+    margin-top: 2rem;
+    padding: 2rem;
+  }
+
+  .gender-inputs {
+    flex-direction: column;
+    padding-left: 0.5rem;
+  }
+
+  .gender-input {
+    margin-top: 0.5rem;
+  }
+}
